@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="pilka.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball</title>
+</head>
+<body>
+<header>
+    <p class='title'>Piłeczka</p>
+</header>
+
+<section class='contener'>
+    <div class='box'>
+        <div id='ball'></div>
+        <div id='dash1'></div>
+        <div id='dash2'></div>
+        <div id='dash3'></div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<script>
+const czas = setTimeout(ukryj,12000);
+const pilka1 = setTimeout(fade1,12500);
+const pilka2 = setTimeout(fade2,12700);
+const pilka3 = setTimeout(fade3,12900);
+const pilka4 = setTimeout(fade4,13000);
+function ukryj(){
+    document.getElementById('dash1').style.display = 'none';
+    document.getElementById('dash2').style.display = 'none';
+    document.getElementById('dash3').style.display = 'none';
+}
+function fade1(){
+            document.getElementById('ball').style.opacity = 0.8;
+}
+function fade2(){
+            document.getElementById('ball').style.opacity = 0.6;
+}
+function fade3(){
+            document.getElementById('ball').style.opacity = 0.3;
+}
+function fade4(){
+            document.getElementById('ball').style.opacity = 0;
+}
+</script>
